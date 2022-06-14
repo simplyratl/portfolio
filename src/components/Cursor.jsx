@@ -48,6 +48,7 @@ const Cursor = () => {
             height: 150,
             x: mousePos.x - 55,
             y: mousePos.y - 65,
+            // mixBlendMode: "saturation",
         },
     };
 

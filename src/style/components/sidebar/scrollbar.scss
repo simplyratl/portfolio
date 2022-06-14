@@ -8,6 +8,10 @@
     align-items: center;
     top: 0;
 
+    @media only screen and (max-device-width: 768px) {
+        display: none;
+    }
+
     .progress-bar-container {
         position: relative;
         width: 1px;

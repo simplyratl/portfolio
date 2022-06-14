@@ -1,1 +1,1 @@
-header{position:fixed;margin-top:16px;top:0;left:100px}header img{width:120px;height:120px;border-radius:50%;-o-object-fit:cover;object-fit:cover}header img:hover{filter:grayscale(1)}/*# sourceMappingURL=navbar.min.css.map */
+header{position:fixed;margin-top:16px;top:0;left:100px;z-index:999}header img{width:120px;height:120px;border-radius:50%;-o-object-fit:cover;object-fit:cover}/*# sourceMappingURL=navbar.min.css.map */

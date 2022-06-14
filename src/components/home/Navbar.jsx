@@ -13,6 +13,8 @@ const Navbar = () => {
             <a href="#" onMouseEnter={() => mouseEnter(dispatch)} onMouseLeave={() => mouseLeave(dispatch)}>
                 <img src={Picture} />
             </a>
+
+            <a className="github-link">My GitHub</a>
         </header>
     );
 };

@@ -9,4 +9,8 @@
     mix-blend-mode: difference;
     z-index: 999;
     pointer-events: none;
+
+    @media only screen and (max-device-width: 768px) {
+        display: none;
+    }
 }

@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <>
             <Navbar />
-            <main style={{ margin: "0 100px" }}>
+            <main>
                 <Hero />
                 <Work />
             </main>
