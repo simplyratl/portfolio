@@ -31,7 +31,7 @@ const Work = () => {
     const videoHoverRef = useRef();
 
     return (
-        <Parallax speed={5} translateY={-20}>
+        <Parallax speed={5} translateY={-10}>
             <div className="work-container">
                 <h3>Work</h3>
                 <p className="header">College and personal projects.</p>
@@ -42,92 +42,215 @@ const Work = () => {
                     animate={{ opacity: 1, y: 0 }}
                 >
                     <div className="work-box">
-                        <div className="work-box-wrapper">
-                            <a
-                                href="#"
-                                onMouseEnter={() => mouseEnter(dispatch)}
-                                onMouseLeave={() => mouseLeave(dispatch)}
-                            >
-                                <div className="image-container">
+                        <div className="mockup-container">
+                            <div className="work-box-wrapper">
+                                <a
+                                    href="#"
+                                    onMouseEnter={() => mouseEnter(dispatch)}
+                                    onMouseLeave={() => mouseLeave(dispatch)}
+                                    className="image-container"
+                                >
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={InstagramCloneMobile} className="mobile" />
+
                                     <div className="site-container">
                                         <img src={InstagramClone} className="site" />
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+
+                            <div className="info-container">
+                                <a href="#" className="title-link">
+                                    <h3
+                                        className="title"
+                                        onMouseEnter={() => mouseEnter(dispatch)}
+                                        onMouseLeave={() => mouseLeave(dispatch)}
+                                    >
+                                        Instagram Clone
+                                    </h3>
+                                </a>
+                                <p className="info">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
+                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
+                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
+                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
+                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
+                                    consequuntur odio ab perspiciatis exercitationem?
+                                </p>
+                            </div>
                         </div>
-                        <a href="#">
-                            <h3>Instagram Clone</h3>
-                        </a>
                     </div>
 
                     <div className="work-box">
-                        <div className="work-box-wrapper">
-                            <a
-                                href="#"
-                                onMouseEnter={() => mouseEnter(dispatch)}
-                                onMouseLeave={() => mouseLeave(dispatch)}
-                            >
-                                <div className="image-container">
+                        <div className="mockup-container reverse">
+                            <div className="work-box-wrapper">
+                                <a
+                                    href="#"
+                                    onMouseEnter={() => mouseEnter(dispatch)}
+                                    onMouseLeave={() => mouseLeave(dispatch)}
+                                    className="image-container"
+                                >
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={CardGameMobile} className="mobile" />
+
                                     <div className="site-container">
                                         <img src={CardGame} className="site" />
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+
+                            <div className="info-container">
+                                <a href="#" className="title-link">
+                                    <h3
+                                        className="title"
+                                        onMouseEnter={() => mouseEnter(dispatch)}
+                                        onMouseLeave={() => mouseLeave(dispatch)}
+                                    >
+                                        Card Game
+                                    </h3>
+                                </a>
+                                <p className="info">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
+                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
+                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
+                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
+                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
+                                    consequuntur odio ab perspiciatis exercitationem?
+                                </p>
+                            </div>
                         </div>
-                        <a href="#">
-                            <h3>Memory Card Game</h3>
-                        </a>
                     </div>
+
                     <div className="work-box">
-                        <div className="work-box-wrapper">
-                            <a
-                                href="#"
-                                onMouseEnter={() => mouseEnter(dispatch)}
-                                onMouseLeave={() => mouseLeave(dispatch)}
-                            >
-                                <div className="image-container">
+                        <div className="mockup-container">
+                            <div className="work-box-wrapper">
+                                <a
+                                    href="#"
+                                    onMouseEnter={() => mouseEnter(dispatch)}
+                                    onMouseLeave={() => mouseLeave(dispatch)}
+                                    className="image-container"
+                                >
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={BeatstoreMobile} className="mobile" />
+
                                     <div className="site-container">
                                         <img src={Beatstore} className="site" />
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+
+                            <div className="info-container">
+                                <a href="#" className="title-link">
+                                    <h3
+                                        className="title"
+                                        onMouseEnter={() => mouseEnter(dispatch)}
+                                        onMouseLeave={() => mouseLeave(dispatch)}
+                                    >
+                                        Beatstore
+                                    </h3>
+                                </a>
+                                <p className="info">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
+                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
+                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
+                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
+                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
+                                    consequuntur odio ab perspiciatis exercitationem?
+                                </p>
+                            </div>
                         </div>
-                        <a href="#">
-                            <h3>Beatstore</h3>
-                        </a>
                     </div>
 
                     <div className="work-box">
-                        <div className="work-box-wrapper">
-                            <a
-                                href="#"
-                                onMouseEnter={() => mouseEnter(dispatch)}
-                                onMouseLeave={() => mouseLeave(dispatch)}
-                            >
-                                <div className="image-container">
+                        <div className="mockup-container reverse">
+                            <div className="work-box-wrapper">
+                                <a
+                                    href="#"
+                                    onMouseEnter={() => mouseEnter(dispatch)}
+                                    onMouseLeave={() => mouseLeave(dispatch)}
+                                    className="image-container"
+                                >
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={NetflixMobile} className="mobile" />
+
                                     <div className="site-container">
                                         <img src={Netflix} className="site" />
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+
+                            <div className="info-container">
+                                <a href="#" className="title-link">
+                                    <h3
+                                        className="title"
+                                        onMouseEnter={() => mouseEnter(dispatch)}
+                                        onMouseLeave={() => mouseLeave(dispatch)}
+                                    >
+                                        Netflix Clone
+                                    </h3>
+                                </a>
+                                <p className="info">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
+                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
+                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
+                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
+                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
+                                    consequuntur odio ab perspiciatis exercitationem?
+                                </p>
+                            </div>
                         </div>
-                        <a href="#">
-                            <h3>Netflix Clone</h3>
-                        </a>
                     </div>
 
+                    <div className="work-box">
+                        <div className="mockup-container">
+                            <div className="work-box-wrapper">
+                                <a
+                                    href="#"
+                                    onMouseEnter={() => mouseEnter(dispatch)}
+                                    onMouseLeave={() => mouseLeave(dispatch)}
+                                    className="image-container iphone-container"
+                                >
+                                    <img src={Iphone} className="mockup iphone" />
+                                    <video ref={videoHoverRef} controls={false} autoPlay>
+                                        <source src={Weathery} type="video/mp4" />
+                                    </video>
+                                </a>
+                            </div>
+
+                            <div className="info-container">
+                                <a href="#" className="title-link">
+                                    <h3
+                                        className="title"
+                                        onMouseEnter={() => {
+                                            mouseEnter(dispatch);
+                                            videoHoverRef.current.play();
+                                        }}
+                                        onMouseLeave={() => {
+                                            mouseLeave(dispatch);
+                                            videoHoverRef.current.pause();
+                                            videoHoverRef.current.currentTime = 0;
+                                        }}
+                                    >
+                                        Weathery
+                                    </h3>
+                                </a>
+                                <p className="info">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
+                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
+                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
+                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
+                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
+                                    consequuntur odio ab perspiciatis exercitationem?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 
                     <div className="work-box">
                         <div className="work-box-wrapper">
                             <a
@@ -151,7 +274,7 @@ const Work = () => {
                             </a>
                         </div>
                         <h3>Weathery</h3>
-                    </div>
+                    </div> */}
                 </motion.div>
             </div>
         </Parallax>

@@ -17,7 +17,6 @@ const Showcase = () => {
                     start: "top center",
                     end: "400",
                     scrub: 0.6,
-                    markers: true,
                 },
             })
             .to(".wallpaper", {
@@ -25,7 +24,7 @@ const Showcase = () => {
                 scrollTrigger: {
                     trigger: ".showcase-container",
                     start: "400",
-                    end: "560",
+                    end: "600",
                     scrub: 0.6,
                 },
             })
@@ -33,13 +32,12 @@ const Showcase = () => {
                 opacity: 1,
                 scrollTrigger: {
                     trigger: ".showcase-container",
-                    start: "600",
-                    end: "680",
+                    start: "700",
+                    end: "800",
                     scrub: 0.6,
                 },
             });
     }, []);
-
     return (
         <div className="showcase-container">
             <div className="showcase-wrapper">
@@ -48,7 +46,6 @@ const Showcase = () => {
                     <div className="black-screen"></div>
                     <img src={Wallpaper} className="wallpaper" />
                 </div>
-
                 <p className="text">Prepare for takeoff.</p>
             </div>
         </div>
@@ -56,3 +53,4 @@ const Showcase = () => {
 };
 
 export default Showcase;
+// ne?
