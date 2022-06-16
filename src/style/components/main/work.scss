@@ -1,9 +1,38 @@
 .work-container {
     margin-top: 5em;
 
+    @media screen and (max-width: 540px) {
+        padding: 0 8px;
+        overflow: hidden;
+    }
+
     .header {
-        font-size: 3rem;
-        font-weight: 300;
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1;
+
+        @media screen and (max-width: 540px) {
+            font-size: 7vw;
+        }
+
+        @media screen and (max-width: 280px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    h3 {
+        font-size: 3.4rem;
+        font-weight: 800;
+        text-align: center;
+
+        @media screen and (max-width: 540px) {
+            font-size: 12vw;
+        }
+
+        @media screen and (max-width: 280px) {
+            font-size: 2rem;
+        }
     }
 
     .work-wrapper {
@@ -13,6 +42,10 @@
         row-gap: 32px;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 540px) {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
 
         .work-box {
             display: flex;
@@ -35,6 +68,12 @@
                 overflow: hidden;
                 filter: drop-shadow(4px 4px 20px rgba($color: #000000, $alpha: 0.4));
                 transition: 0.2s;
+                background: #000;
+
+                @media screen and (max-width: 540px) {
+                    width: 200px;
+                    height: 200px;
+                }
 
                 @media only screen and (max-device-width: 480px) {
                     width: 260px;
@@ -46,6 +85,18 @@
                 }
 
                 &:hover {
+                    .iphone-container {
+                        video {
+                            visibility: visible !important;
+                            opacity: 1 !important;
+                        }
+
+                        .iphone {
+                            visibility: hidden !important;
+                            opacity: 0 !important;
+                        }
+                    }
+
                     .site {
                         animation: scroll 10s ease infinite;
 
@@ -80,6 +131,27 @@
                     transform: scale(0.93);
                     filter: saturate(0.4);
                     transition: 0.18s;
+
+                    &.iphone-container {
+                        video {
+                            position: relative;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 40%;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                            z-index: 1;
+                        }
+
+                        .iphone {
+                            visibility: visible !important;
+                            opacity: 1;
+                            width: 40%;
+                            transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                        }
+                    }
 
                     .mockup {
                         position: absolute;

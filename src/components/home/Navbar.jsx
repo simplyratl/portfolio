@@ -14,7 +14,7 @@ const Navbar = () => {
                 <img src={Picture} />
             </a>
 
-            <a className="github-link">My GitHub</a>
+            {/* <a className="github-link">My GitHub</a> */}
         </header>
     );
 };

@@ -1,15 +1,21 @@
 import React from "react";
+import CodeAnimation from "../components/home/CodeAnimation";
 import Hero from "../components/home/Hero";
 import Navbar from "../components/home/Navbar";
+import Showcase from "../components/home/Showcase";
 import Work from "../components/home/Work";
 
 const Main = () => {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <main>
-                <Hero />
-                <Work />
+                <div className="main-wrapper">
+                    <Hero />
+                    <Work />
+                    {/* <CodeAnimation /> */}
+                    <Showcase />
+                </div>
             </main>
         </>
     );
