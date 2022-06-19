@@ -4,9 +4,14 @@ import Wallpaper from "../../assets/images/wallpaper.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../../style/dist/showcase.min.css";
+import { useContext } from "react";
+import { mouseEnter, mouseLeave } from "../../context/cursorContext/cursorCalls";
+import { CursorContext } from "../../context/cursorContext/CursorContext";
 
 const Showcase = () => {
     gsap.registerPlugin(ScrollTrigger);
+
+    const { dispatch } = useContext(CursorContext);
 
     useEffect(() => {
         gsap.timeline()
@@ -46,7 +51,20 @@ const Showcase = () => {
                     <div className="black-screen"></div>
                     <img src={Wallpaper} className="wallpaper" />
                 </div>
-                <p className="text">Prepare for takeoff.</p>
+                <p className="text">
+                    <a
+                        href="https://github.com/simplyratl?tab=repositories"
+                        target="_blank"
+                        onMouseEnter={() => {
+                            mouseEnter(dispatch);
+                        }}
+                        onMouseLeave={() => {
+                            mouseLeave(dispatch);
+                        }}
+                    >
+                        Github.
+                    </a>
+                </p>
             </div>
         </div>
     );

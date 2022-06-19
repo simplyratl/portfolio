@@ -52,6 +52,7 @@
             align-items: center;
             flex-direction: column;
             margin: 132px 0;
+            transform-style: preserve-3d;
 
             @media screen and (max-width: 1100px) {
                 margin: 80px 0;
@@ -68,6 +69,23 @@
 
                 &.reverse {
                     flex-direction: row-reverse;
+                }
+
+                .click-container {
+                    position: absolute;
+                    width: 30%;
+                    height: 30%;
+                    top: 50%;
+                    left: 40%;
+                    transform: translate(-50%, -50%);
+                    z-index: 10;
+                    filter: brightness(100);
+                    visibility: visible;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
 
                 @media screen and (max-width: 800px) {
@@ -125,6 +143,10 @@
 
                 &:hover {
                     filter: drop-shadow(4px 4px 20px rgba($color: #000000, $alpha: 0.8));
+
+                    .click-container {
+                        visibility: hidden;
+                    }
 
                     .iphone-container {
                         video {

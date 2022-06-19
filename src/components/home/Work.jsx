@@ -23,6 +23,8 @@ import Iphone from "../../assets/work/iphone.png";
 
 import { Parallax } from "react-scroll-parallax";
 
+import Click from "../../assets/animations/click.gif";
+
 import "../../style/dist/work.min.css";
 
 const Work = () => {
@@ -38,18 +40,18 @@ const Work = () => {
 
                 <motion.div
                     className="work-wrapper"
-                    inherit={{ opacity: 0, y: -20 }}
+                    initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
-                    <div className="work-box">
+                    <motion.div
+                        className="work-box"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className="mockup-container">
                             <div className="work-box-wrapper">
-                                <a
-                                    href="#"
-                                    onMouseEnter={() => mouseEnter(dispatch)}
-                                    onMouseLeave={() => mouseLeave(dispatch)}
-                                    className="image-container"
-                                >
+                                <a href="#" className="image-container">
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={InstagramCloneMobile} className="mobile" />
@@ -60,7 +62,12 @@ const Work = () => {
                                 </a>
                             </div>
 
-                            <div className="info-container">
+                            <motion.div
+                                className="info-container"
+                                initial={{ opacity: 0, x: "10%" }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.6, delay: 0.8 }}
+                            >
                                 <a href="#" className="title-link">
                                     <h3
                                         className="title"
@@ -71,26 +78,25 @@ const Work = () => {
                                     </h3>
                                 </a>
                                 <p className="info">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
-                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
-                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
-                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
-                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
-                                    consequuntur odio ab perspiciatis exercitationem?
+                                    Instagram Clone built with HTML, CSS, Javascript (JQuery), PHP and MYSQL
+                                    for a student project. Because there is no follow functionality every post
+                                    is global. Which means that every user can see each others posts and
+                                    comments. (maybe a new social media? :) ) Basicaly every CRUD operation is
+                                    used in some way throughout the site.
                                 </p>
-                            </div>
+                            </motion.div>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="work-box">
+                    <motion.div
+                        className="work-box"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className="mockup-container reverse">
                             <div className="work-box-wrapper">
-                                <a
-                                    href="#"
-                                    onMouseEnter={() => mouseEnter(dispatch)}
-                                    onMouseLeave={() => mouseLeave(dispatch)}
-                                    className="image-container"
-                                >
+                                <a href="#" className="image-container">
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={CardGameMobile} className="mobile" />
@@ -101,8 +107,18 @@ const Work = () => {
                                 </a>
                             </div>
 
-                            <div className="info-container">
-                                <a href="#" className="title-link">
+                            <motion.div
+                                className="info-container"
+                                initial={{ opacity: 0, x: "10%" }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.6, delay: 0.8 }}
+                            >
+                                <a
+                                    href="#"
+                                    className="title-link"
+                                    onMouseEnter={() => mouseEnter(dispatch)}
+                                    onMouseLeave={() => mouseLeave(dispatch)}
+                                >
                                     <h3
                                         className="title"
                                         onMouseEnter={() => mouseEnter(dispatch)}
@@ -112,26 +128,28 @@ const Work = () => {
                                     </h3>
                                 </a>
                                 <p className="info">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
-                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
-                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
-                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
-                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
-                                    consequuntur odio ab perspiciatis exercitationem?
+                                    Another student project, this time created with HTML, CSS, and Vanilla
+                                    Javascript. A simple memory card game that everyone is familiar with, but
+                                    with three unique variations. There are three levels of difficulty: easy,
+                                    medium, and hard. The size of the table and the tiles within them are the
+                                    key differences between them. Easy is 4x4, medium is 6x6, and hard is 8x8.
+                                    You can aim for a high score while running away from the timer using a
+                                    scoreboard that resets after the session (limitations of the student
+                                    project).
                                 </p>
-                            </div>
+                            </motion.div>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="work-box">
+                    <motion.div
+                        className="work-box"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                    >
                         <div className="mockup-container">
                             <div className="work-box-wrapper">
-                                <a
-                                    href="#"
-                                    onMouseEnter={() => mouseEnter(dispatch)}
-                                    onMouseLeave={() => mouseLeave(dispatch)}
-                                    className="image-container"
-                                >
+                                <a href="#" className="image-container">
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={BeatstoreMobile} className="mobile" />
@@ -142,37 +160,42 @@ const Work = () => {
                                 </a>
                             </div>
 
-                            <div className="info-container">
-                                <a href="#" className="title-link">
-                                    <h3
-                                        className="title"
-                                        onMouseEnter={() => mouseEnter(dispatch)}
-                                        onMouseLeave={() => mouseLeave(dispatch)}
-                                    >
-                                        Beatstore
-                                    </h3>
-                                </a>
-                                <p className="info">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
-                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
-                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
-                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
-                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
-                                    consequuntur odio ab perspiciatis exercitationem?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="work-box">
-                        <div className="mockup-container reverse">
-                            <div className="work-box-wrapper">
+                            <motion.div
+                                className="info-container"
+                                initial={{ opacity: 0, x: "10%" }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.6, delay: 0.8 }}
+                            >
                                 <a
                                     href="#"
+                                    className="title-link"
                                     onMouseEnter={() => mouseEnter(dispatch)}
                                     onMouseLeave={() => mouseLeave(dispatch)}
-                                    className="image-container"
                                 >
+                                    <h3 className="title">Beatstore</h3>
+                                </a>
+                                <p className="info">
+                                    A sophisticated project built with React js on the frontend and Node js on
+                                    the backend. Firebase is used to store audio and photos, and MongoDB is
+                                    utilized to store JSON information files about users and beats. Adding
+                                    beats is done through the admin panel, which is separate from the main
+                                    site. Basically, the admin panel is used to maintain the site. The main
+                                    functionality of the site are transactions, which is why someone would
+                                    want to visit it. To purchase high-quality beats on a modern design!
+                                </p>
+                            </motion.div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className="work-box"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <div className="mockup-container reverse">
+                            <div className="work-box-wrapper">
+                                <a href="#" className="image-container">
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={NetflixMobile} className="mobile" />
@@ -183,98 +206,91 @@ const Work = () => {
                                 </a>
                             </div>
 
-                            <div className="info-container">
-                                <a href="#" className="title-link">
-                                    <h3
-                                        className="title"
-                                        onMouseEnter={() => mouseEnter(dispatch)}
-                                        onMouseLeave={() => mouseLeave(dispatch)}
-                                    >
-                                        Netflix Clone
-                                    </h3>
-                                </a>
-                                <p className="info">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
-                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
-                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
-                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
-                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
-                                    consequuntur odio ab perspiciatis exercitationem?
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="work-box">
-                        <div className="mockup-container">
-                            <div className="work-box-wrapper">
+                            <motion.div
+                                className="info-container"
+                                initial={{ opacity: 0, x: "10%" }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.6, delay: 0.8 }}
+                            >
                                 <a
                                     href="#"
+                                    className="title-link"
                                     onMouseEnter={() => mouseEnter(dispatch)}
                                     onMouseLeave={() => mouseLeave(dispatch)}
+                                >
+                                    <h3 className="title">Netflix Clone</h3>
+                                </a>
+                                <p className="info">
+                                    What more to say? Netflix clone made using React js. The main goal wasn't
+                                    a functionality but a basic idea of learning to create a Netflix style
+                                    interface. Watching videos isn't available because... 🏴‍☠️. But looking
+                                    through what is new and popular definetely is. Using Movie Database for
+                                    fetching information makes the site all the time relevant considering the
+                                    API is updating a lot.
+                                </p>
+                            </motion.div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className="work-box"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <div className="mockup-container">
+                            <div className="work-box-wrapper">
+                                <div
                                     className="image-container iphone-container"
+                                    onMouseEnter={() => {
+                                        videoHoverRef.current.play();
+                                    }}
+                                    onMouseLeave={() => {
+                                        videoHoverRef.current.pause();
+                                        videoHoverRef.current.currentTime = 0;
+                                    }}
                                 >
                                     <img src={Iphone} className="mockup iphone" />
+                                    <div className="click-container">
+                                        <img src={Click} />
+                                    </div>
                                     <video ref={videoHoverRef} controls={false} autoPlay>
                                         <source src={Weathery} type="video/mp4" />
                                     </video>
-                                </a>
+                                </div>
                             </div>
 
-                            <div className="info-container">
+                            <motion.div
+                                className="info-container"
+                                // initial={{ opacity: 0, x: "10%" }}
+                                // whileInView={{ opacity: 1, x: "50%" }}
+                                // transition={{ duration: 0.6, delay: 0.8 }}
+                            >
                                 <a href="#" className="title-link">
                                     <h3
                                         className="title"
                                         onMouseEnter={() => {
                                             mouseEnter(dispatch);
-                                            videoHoverRef.current.play();
                                         }}
                                         onMouseLeave={() => {
                                             mouseLeave(dispatch);
-                                            videoHoverRef.current.pause();
-                                            videoHoverRef.current.currentTime = 0;
                                         }}
                                     >
                                         Weathery
                                     </h3>
                                 </a>
                                 <p className="info">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci
-                                    velit porro nihil rem, incidunt, dolor dolores officiis cumque voluptatum
-                                    sequi laudantium obcaecati placeat aperiam vel quisquam amet ab
-                                    reiciendis, eligendi nam voluptatem provident consequuntur. Accusantium
-                                    molestias hic, consequatur in labore recusandae. Explicabo iusto pariatur
-                                    consequuntur odio ab perspiciatis exercitationem?
+                                    A basic weather app that is made to work only on mobile phones, using
+                                    React Native. With basic animations, the design is modern and simple.
+                                    Current weather and temperature, both hourly and daily, are available as a
+                                    option to check. Based on the preferences or your the system you use to
+                                    check the temperature, it is also avaliable to change from kelvin to
+                                    fehrenheit and kelvins. Data is being updated hourly by using OpenWeather
+                                    API.
                                 </p>
-                            </div>
+                            </motion.div>
                         </div>
-                    </div>
-
-                    {/* 
-                    <div className="work-box">
-                        <div className="work-box-wrapper">
-                            <a
-                                href="#"
-                                onMouseEnter={() => {
-                                    mouseEnter(dispatch);
-                                    videoHoverRef.current.play();
-                                }}
-                                onMouseLeave={() => {
-                                    mouseLeave(dispatch);
-                                    videoHoverRef.current.pause();
-                                    videoHoverRef.current.currentTime = 0;
-                                }}
-                            >
-                                <div className="image-container iphone-container">
-                                    <img src={Iphone} className="mockup iphone" />
-                                    <video ref={videoHoverRef} controls={false} autoPlay>
-                                        <source src={Weathery} type="video/mp4" />
-                                    </video>
-                                </div>
-                            </a>
-                        </div>
-                        <h3>Weathery</h3>
-                    </div> */}
+                    </motion.div>
                 </motion.div>
             </div>
         </Parallax>

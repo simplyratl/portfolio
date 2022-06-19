@@ -1,5 +1,6 @@
 import React from "react";
 import CodeAnimation from "../components/home/CodeAnimation";
+import ContactPage from "../components/home/ContactPage";
 import Hero from "../components/home/Hero";
 import Navbar from "../components/home/Navbar";
 import Showcase from "../components/home/Showcase";
@@ -15,6 +16,7 @@ const Main = () => {
                     <Work />
                     {/* <CodeAnimation /> */}
                     <Showcase />
+                    <ContactPage />
                 </div>
             </main>
         </>

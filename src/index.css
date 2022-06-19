@@ -16,7 +16,6 @@ body {
     background-color: #f4f4f4;
     line-height: 1.7;
     overflow-x: hidden;
-    height: 5000px;
 }
 
 code {
@@ -37,8 +36,8 @@ main {
     /* padding: 0 20px; */
 }
 
-@media only screen and (max-device-width: 768px) {
-    main {
-        /* margin: 0; */
+@media only screen and (max-device-width: 200px) {
+    * {
+        margin: 0 !important;
     }
 }
