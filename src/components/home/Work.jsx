@@ -16,6 +16,9 @@ import BeatstoreMobile from "../../assets/work/beatstore_mobile.png";
 import Netflix from "../../assets/work/netflix.png";
 import NetflixMobile from "../../assets/work/netflix_mobile.png";
 
+import Pinterest from "../../assets/work/pinterest.png";
+import PinterestMobile from "../../assets/work/pinterest_mobile.png";
+
 import Weathery from "../../assets/work/weathery.mp4";
 
 import Mockup from "../../assets/work/mockup.png";
@@ -96,7 +99,11 @@ const Work = () => {
                     >
                         <div className="mockup-container reverse">
                             <div className="work-box-wrapper">
-                                <a href="#" className="image-container">
+                                <a
+                                    href="https://github.com/simplyratl/card-game"
+                                    className="image-container"
+                                    target="_blank"
+                                >
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={CardGameMobile} className="mobile" />
@@ -114,8 +121,9 @@ const Work = () => {
                                 transition={{ duration: 0.6, delay: 0.8 }}
                             >
                                 <a
-                                    href="#"
+                                    href="https://github.com/simplyratl/card-game"
                                     className="title-link"
+                                    target="_blank"
                                     onMouseEnter={() => mouseEnter(dispatch)}
                                     onMouseLeave={() => mouseLeave(dispatch)}
                                 >
@@ -149,6 +157,54 @@ const Work = () => {
                     >
                         <div className="mockup-container">
                             <div className="work-box-wrapper">
+                                <a
+                                    href="https://github.com/simplyratl/pinterest-clone"
+                                    className="image-container"
+                                    target="_blank"
+                                >
+                                    <img src={Mockup} className="mockup" />
+
+                                    <img src={PinterestMobile} className="mobile" />
+
+                                    <div className="site-container">
+                                        <img src={Pinterest} className="site" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <motion.div
+                                className="info-container"
+                                initial={{ opacity: 0, x: "10%" }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.6, delay: 0.8 }}
+                            >
+                                <a
+                                    href="https://github.com/simplyratl/pinterest-clone"
+                                    className="title-link"
+                                    target="_blank"
+                                    onMouseEnter={() => mouseEnter(dispatch)}
+                                    onMouseLeave={() => mouseLeave(dispatch)}
+                                >
+                                    <h3 className="title">Pinterest Clone</h3>
+                                </a>
+                                <p className="info">
+                                    Student project made using JQuery, PHP and MYSQL. As a user you are able
+                                    to add posts, add comments, view other profiles and save posts. Despite
+                                    having a similar project Instagram Clone this one has a better code,
+                                    because this time wasn't my first time making a PHP website.
+                                </p>
+                            </motion.div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        className="work-box"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <div className="mockup-container reverse">
+                            <div className="work-box-wrapper">
                                 <a href="#" className="image-container">
                                     <img src={Mockup} className="mockup" />
 
@@ -167,8 +223,9 @@ const Work = () => {
                                 transition={{ duration: 0.6, delay: 0.8 }}
                             >
                                 <a
-                                    href="#"
+                                    href="https://github.com/simplyratl/beatstore"
                                     className="title-link"
+                                    target="_blank"
                                     onMouseEnter={() => mouseEnter(dispatch)}
                                     onMouseLeave={() => mouseLeave(dispatch)}
                                 >
@@ -193,9 +250,13 @@ const Work = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <div className="mockup-container reverse">
+                        <div className="mockup-container">
                             <div className="work-box-wrapper">
-                                <a href="#" className="image-container">
+                                <a
+                                    href="https://github.com/simplyratl/beatstore"
+                                    className="image-container"
+                                    target="_blank"
+                                >
                                     <img src={Mockup} className="mockup" />
 
                                     <img src={NetflixMobile} className="mobile" />
@@ -238,7 +299,7 @@ const Work = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <div className="mockup-container">
+                        <div className="mockup-container reverse">
                             <div className="work-box-wrapper">
                                 <div
                                     className="image-container iphone-container"
@@ -260,13 +321,12 @@ const Work = () => {
                                 </div>
                             </div>
 
-                            <motion.div
-                                className="info-container"
-                                // initial={{ opacity: 0, x: "10%" }}
-                                // whileInView={{ opacity: 1, x: "50%" }}
-                                // transition={{ duration: 0.6, delay: 0.8 }}
-                            >
-                                <a href="#" className="title-link">
+                            <motion.div className="info-container">
+                                <a
+                                    href="https://github.com/simplyratl/weather-app-ios"
+                                    className="title-link"
+                                    target="_blank"
+                                >
                                     <h3
                                         className="title"
                                         onMouseEnter={() => {

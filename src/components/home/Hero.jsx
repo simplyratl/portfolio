@@ -11,7 +11,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
         >
             <h1 className="heading">Front End developer.</h1>
-            <h1 className="heading">simplyratl</h1>
+        <h1 className="heading">Nikica Ražnatović</h1>
         </motion.div>
     );
 };

@@ -4,6 +4,7 @@ import ContactPage from "../components/home/ContactPage";
 import Hero from "../components/home/Hero";
 import Navbar from "../components/home/Navbar";
 import Showcase from "../components/home/Showcase";
+import Skills from "../components/home/Skills";
 import Work from "../components/home/Work";
 
 const Main = () => {
@@ -14,7 +15,7 @@ const Main = () => {
                 <div className="main-wrapper">
                     <Hero />
                     <Work />
-                    {/* <CodeAnimation /> */}
+                    <Skills />
                     <Showcase />
                     <ContactPage />
                 </div>

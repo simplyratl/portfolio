@@ -10,9 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <CursorContextProvider>
         <ParallaxProvider>
-            <React.StrictMode>
-                <App />
-            </React.StrictMode>
+            <App />
         </ParallaxProvider>
     </CursorContextProvider>
 );

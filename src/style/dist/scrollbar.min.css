@@ -1,1 +1,29 @@
-.scroll-bar-container{position:fixed;width:100px;max-width:100px;height:100%;display:flex;justify-content:center;align-items:center;top:0}@media only screen and (max-device-width: 768px){.scroll-bar-container{display:none}}.scroll-bar-container .progress-bar-container{position:relative;width:1px;height:100%;background-color:#d3d3d3}.scroll-bar-container .progress-bar-container .progress-bar{position:absolute;top:0;left:0;width:1px;background-color:#000;transition:.2s ease}/*# sourceMappingURL=scrollbar.min.css.map */
+.scroll-bar-container {
+  position: fixed;
+  width: 100px;
+  max-width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+@media only screen and (max-device-width: 768px) {
+  .scroll-bar-container {
+    display: none;
+  }
+}
+.scroll-bar-container .progress-bar-container {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  background-color: lightgray;
+}
+.scroll-bar-container .progress-bar-container .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  background-color: #000;
+  transition: 0.2s ease;
+}/*# sourceMappingURL=scrollbar.min.css.map */
