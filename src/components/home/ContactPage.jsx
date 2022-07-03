@@ -107,7 +107,7 @@ const ContactPage = () => {
 
                     <div className="row">
                         <ReCAPTCHA
-                            sitekey="6LeLEr8gAAAAAOaVmphZlPiyvsaYbcyJDcxTtV9E"
+                            sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
                             onChange={onChangeRecaptcha}
                         />
                         ,

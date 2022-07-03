@@ -55,7 +55,7 @@ const Work = () => {
                         <div className="mockup-container">
                             <div className="work-box-wrapper">
                                 <a href="#" className="image-container">
-                                    <img src={Mockup} className="mockup" />
+                                    <img src={Mockup} className="mockup" alt="mockup" />
 
                                     <img src={InstagramCloneMobile} className="mobile" />
 
@@ -103,8 +103,9 @@ const Work = () => {
                                     href="https://github.com/simplyratl/card-game"
                                     className="image-container"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
-                                    <img src={Mockup} className="mockup" />
+                                    <img src={Mockup} className="mockup" alt="mockup" />
 
                                     <img src={CardGameMobile} className="mobile" />
 
@@ -124,6 +125,7 @@ const Work = () => {
                                     href="https://github.com/simplyratl/card-game"
                                     className="title-link"
                                     target="_blank"
+                                    rel="noreferrer"
                                     onMouseEnter={() => mouseEnter(dispatch)}
                                     onMouseLeave={() => mouseLeave(dispatch)}
                                 >
@@ -161,8 +163,9 @@ const Work = () => {
                                     href="https://github.com/simplyratl/pinterest-clone"
                                     className="image-container"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
-                                    <img src={Mockup} className="mockup" />
+                                    <img src={Mockup} className="mockup" alt="mockup" />
 
                                     <img src={PinterestMobile} className="mobile" />
 
@@ -182,6 +185,7 @@ const Work = () => {
                                     href="https://github.com/simplyratl/pinterest-clone"
                                     className="title-link"
                                     target="_blank"
+                                    rel="noreferrer"
                                     onMouseEnter={() => mouseEnter(dispatch)}
                                     onMouseLeave={() => mouseLeave(dispatch)}
                                 >
@@ -206,7 +210,7 @@ const Work = () => {
                         <div className="mockup-container reverse">
                             <div className="work-box-wrapper">
                                 <a href="#" className="image-container">
-                                    <img src={Mockup} className="mockup" />
+                                    <img src={Mockup} className="mockup" alt="mockup" />
 
                                     <img src={BeatstoreMobile} className="mobile" />
 
@@ -226,6 +230,7 @@ const Work = () => {
                                     href="https://github.com/simplyratl/beatstore"
                                     className="title-link"
                                     target="_blank"
+                                    rel="noreferrer"
                                     onMouseEnter={() => mouseEnter(dispatch)}
                                     onMouseLeave={() => mouseLeave(dispatch)}
                                 >
@@ -256,8 +261,9 @@ const Work = () => {
                                     href="https://github.com/simplyratl/beatstore"
                                     className="image-container"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
-                                    <img src={Mockup} className="mockup" />
+                                    <img src={Mockup} className="mockup" alt="mockup" />
 
                                     <img src={NetflixMobile} className="mobile" />
 
@@ -326,6 +332,7 @@ const Work = () => {
                                     href="https://github.com/simplyratl/weather-app-ios"
                                     className="title-link"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <h3
                                         className="title"

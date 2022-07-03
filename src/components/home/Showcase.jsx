@@ -47,9 +47,9 @@ const Showcase = () => {
         <div className="showcase-container">
             <div className="showcase-wrapper">
                 <div className="laptop">
-                    <img src={Laptop} className="laptop-img" />
+                    <img src={Laptop} className="laptop-img" alt="laptop" />
                     <div className="black-screen"></div>
-                    <img src={Wallpaper} className="wallpaper" />
+                    <img src={Wallpaper} className="wallpaper" alt="wallpaper" />
                 </div>
                 <p className="text">
                     <a
