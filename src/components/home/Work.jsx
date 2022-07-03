@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { useContext } from "react";
 import { mouseEnter, mouseLeave } from "../../context/cursorContext/cursorCalls";
 import { motion } from "framer-motion";
@@ -57,10 +57,10 @@ const Work = () => {
                                 <a href="#" className="image-container">
                                     <img src={Mockup} className="mockup" alt="mockup" />
 
-                                    <img src={InstagramCloneMobile} className="mobile" />
+                                    <img src={InstagramCloneMobile} className="mobile" alt="mobile" />
 
                                     <div className="site-container">
-                                        <img src={InstagramClone} className="site" />
+                                        <img src={InstagramClone} className="site" alt="site" />
                                     </div>
                                 </a>
                             </div>
@@ -107,10 +107,10 @@ const Work = () => {
                                 >
                                     <img src={Mockup} className="mockup" alt="mockup" />
 
-                                    <img src={CardGameMobile} className="mobile" />
+                                    <img src={CardGameMobile} className="mobile" alt="mobile" />
 
                                     <div className="site-container">
-                                        <img src={CardGame} className="site" />
+                                        <img src={CardGame} className="site" alt="site" />
                                     </div>
                                 </a>
                             </div>
@@ -167,10 +167,10 @@ const Work = () => {
                                 >
                                     <img src={Mockup} className="mockup" alt="mockup" />
 
-                                    <img src={PinterestMobile} className="mobile" />
+                                    <img src={PinterestMobile} className="mobile" alt="mobile" />
 
                                     <div className="site-container">
-                                        <img src={Pinterest} className="site" />
+                                        <img src={Pinterest} className="site" alt="site" />
                                     </div>
                                 </a>
                             </div>
@@ -212,10 +212,10 @@ const Work = () => {
                                 <a href="#" className="image-container">
                                     <img src={Mockup} className="mockup" alt="mockup" />
 
-                                    <img src={BeatstoreMobile} className="mobile" />
+                                    <img src={BeatstoreMobile} className="mobile" alt="mobile" />
 
                                     <div className="site-container">
-                                        <img src={Beatstore} className="site" />
+                                        <img src={Beatstore} className="site" alt="site" />
                                     </div>
                                 </a>
                             </div>
@@ -265,10 +265,10 @@ const Work = () => {
                                 >
                                     <img src={Mockup} className="mockup" alt="mockup" />
 
-                                    <img src={NetflixMobile} className="mobile" />
+                                    <img src={NetflixMobile} className="mobile" alt="mobile" />
 
                                     <div className="site-container">
-                                        <img src={Netflix} className="site" />
+                                        <img src={Netflix} className="site" alt="site" />
                                     </div>
                                 </a>
                             </div>
@@ -317,9 +317,9 @@ const Work = () => {
                                         videoHoverRef.current.currentTime = 0;
                                     }}
                                 >
-                                    <img src={Iphone} className="mockup iphone" />
+                                    <img src={Iphone} className="mockup iphone" alt="mockup" />
                                     <div className="click-container">
-                                        <img src={Click} />
+                                        <img src={Click} alt="click" />
                                     </div>
                                     <video ref={videoHoverRef} controls={false} autoPlay>
                                         <source src={Weathery} type="video/mp4" />

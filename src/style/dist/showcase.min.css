@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 }
 .showcase-container .showcase-wrapper .laptop .laptop-img {
   width: 60%;

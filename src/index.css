@@ -36,6 +36,11 @@ main {
     /* padding: 0 20px; */
 }
 
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
 @media only screen and (max-device-width: 200px) {
     * {
         margin: 0 !important;

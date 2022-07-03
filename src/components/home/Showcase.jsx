@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Laptop from "../../assets/images/macbook.png";
-import Wallpaper from "../../assets/images/wallpaper.png";
+import Wallpaper from "../../assets/images/wallpaper.webp";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../../style/dist/showcase.min.css";
@@ -55,6 +55,7 @@ const Showcase = () => {
                     <a
                         href="https://github.com/simplyratl?tab=repositories"
                         target="_blank"
+                        rel="noreferrer"
                         onMouseEnter={() => {
                             mouseEnter(dispatch);
                         }}

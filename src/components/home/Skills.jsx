@@ -5,25 +5,26 @@ import "../../style/dist/skills.min.css";
 const Skills = () => {
     const skillsContainer = useRef();
     const [skillsElements, setSkillsElements] = useState([]);
-    const skills = [
-        "HTML",
-        "SCSS",
-        "JSON",
-        "REST",
-        "SQL",
-        "PHP",
-        "REACT",
-        "GSAP",
-        "FRAMER MOTION",
-        "ES6/ES7",
-    ];
 
     useEffect(() => {
         const generateSkills = () => {
+            const skills = [
+                "HTML",
+                "SCSS",
+                "JSON",
+                "REST",
+                "SQL",
+                "PHP",
+                "REACT",
+                "GSAP",
+                "FRAMER MOTION",
+                "ES6/ES7",
+            ];
+
             const temp = [];
             skills.forEach((skill, index) => {
-                const x = Math.floor(Math.random() * 100);
-                const y = Math.floor(Math.random() * 300);
+                const x = Math.floor(Math.random() * 30);
+                const y = Math.floor(Math.random() * 200);
 
                 const HTML_SKILL = (
                     <motion.div
@@ -50,7 +51,7 @@ const Skills = () => {
 
     return (
         <div className="skills">
-            <h3>My skills</h3>
+            <h3>Skills</h3>
 
             <div className="skills-wrapper" ref={skillsContainer}>
                 {skillsElements.map((skill) => skill)}
