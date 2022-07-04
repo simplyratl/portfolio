@@ -12,8 +12,9 @@ const Skills = () => {
                 "HTML",
                 "SCSS",
                 "JSON",
-                "REST",
+                "Node JS",
                 "SQL",
+                "REST",
                 "PHP",
                 "REACT",
                 "GSAP",
@@ -22,8 +23,9 @@ const Skills = () => {
             ];
 
             const temp = [];
+
             skills.forEach((skill, index) => {
-                const x = Math.floor(Math.random() * 30);
+                const x = Math.floor(Math.random() * -200);
                 const y = Math.floor(Math.random() * 200);
 
                 const HTML_SKILL = (

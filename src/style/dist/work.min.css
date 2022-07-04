@@ -168,7 +168,7 @@
   visibility: hidden !important;
   opacity: 0 !important;
 }
-.work-container .work-wrapper .work-box .work-box-wrapper:hover .image-container .site-container .site {
+.work-container .work-wrapper .work-box .work-box-wrapper:hover .site-container .site {
   -webkit-animation: scroll 10s ease infinite;
           animation: scroll 10s ease infinite;
 }
@@ -200,6 +200,7 @@
 }
 .work-container .work-wrapper .work-box .work-box-wrapper .image-container {
   position: relative;
+  width: 90%;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -281,7 +282,7 @@
 }
 .work-container .work-wrapper .work-box .work-box-wrapper .image-container.iphone-container video {
   position: absolute;
-  width: 54%;
+  width: 40%;
   visibility: hidden;
   opacity: 0;
   transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -291,6 +292,6 @@
   position: relative;
   visibility: visible !important;
   opacity: 1;
-  width: 54%;
+  width: 40%;
   transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }/*# sourceMappingURL=work.min.css.map */

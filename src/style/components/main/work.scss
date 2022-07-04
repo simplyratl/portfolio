@@ -168,23 +168,21 @@
                         }
                     }
 
-                    .image-container {
-                        .site-container {
-                            .site {
-                                animation: scroll 10s ease infinite;
+                    .site-container {
+                        .site {
+                            animation: scroll 10s ease infinite;
 
-                                @keyframes scroll {
-                                    0% {
-                                        transform: translate(-50%, 0);
-                                    }
+                            @keyframes scroll {
+                                0% {
+                                    transform: translate(-50%, 0);
+                                }
 
-                                    50% {
-                                        transform: translate(-50%, -84%);
-                                    }
+                                50% {
+                                    transform: translate(-50%, -84%);
+                                }
 
-                                    100% {
-                                        transform: translate(-50%, 0);
-                                    }
+                                100% {
+                                    transform: translate(-50%, 0);
                                 }
                             }
                         }
@@ -198,6 +196,7 @@
 
                 .image-container {
                     position: relative;
+                    width: 90%;
                     top: 0;
                     left: 0;
                     overflow: hidden;
@@ -275,7 +274,7 @@
 
                         video {
                             position: absolute;
-                            width: 54%;
+                            width: 40%;
                             visibility: hidden;
                             opacity: 0;
                             transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -286,7 +285,7 @@
                             position: relative;
                             visibility: visible !important;
                             opacity: 1;
-                            width: 54%;
+                            width: 40%;
                             transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
                         }
                     }
