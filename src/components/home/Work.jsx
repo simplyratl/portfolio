@@ -54,7 +54,12 @@ const Work = () => {
                     >
                         <div className="mockup-container">
                             <div className="work-box-wrapper">
-                                <a href="#" className="image-container">
+                                <a
+                                    href="https://github.com/simplyratl/instagram-clone"
+                                    className="image-container"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     <img src={Mockup} className="mockup" alt="mockup" />
 
                                     <img src={InstagramCloneMobile} className="mobile" alt="mobile" />
@@ -71,7 +76,12 @@ const Work = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6, delay: 0.8 }}
                             >
-                                <a href="#" className="title-link">
+                                <a
+                                    href="https://github.com/simplyratl/instagram-clone"
+                                    className="title-link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     <h3
                                         className="title"
                                         onMouseEnter={() => mouseEnter(dispatch)}
@@ -258,7 +268,7 @@ const Work = () => {
                         <div className="mockup-container">
                             <div className="work-box-wrapper">
                                 <a
-                                    href="https://github.com/simplyratl/beatstore"
+                                    href="https://github.com/simplyratl/netflix-clone"
                                     className="image-container"
                                     target="_blank"
                                     rel="noreferrer"
@@ -280,8 +290,10 @@ const Work = () => {
                                 transition={{ duration: 0.6, delay: 0.8 }}
                             >
                                 <a
-                                    href="#"
+                                    href="https://github.com/simplyratl/netflix-clone"
                                     className="title-link"
+                                    target="_blank"
+                                    rel="noreferrer"
                                     onMouseEnter={() => mouseEnter(dispatch)}
                                     onMouseLeave={() => mouseLeave(dispatch)}
                                 >
