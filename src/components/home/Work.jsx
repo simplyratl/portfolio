@@ -219,7 +219,7 @@ const Work = () => {
                     >
                         <div className="mockup-container reverse">
                             <div className="work-box-wrapper">
-                                <a href="#" className="image-container">
+                                <a href="https://github.com/simplyratl/beatstore" className="image-container">
                                     <img src={Mockup} className="mockup" alt="mockup" />
 
                                     <img src={BeatstoreMobile} className="mobile" alt="mobile" />
