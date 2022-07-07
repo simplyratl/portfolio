@@ -4,25 +4,25 @@ import { mouseEnter, mouseLeave } from "../../context/cursorContext/cursorCalls"
 import { motion } from "framer-motion";
 import { CursorContext } from "../../context/cursorContext/CursorContext";
 
-import InstagramClone from "../../assets/work/instagram.png";
-import InstagramCloneMobile from "../../assets/work/instagram_mobile.png";
+import InstagramClone from "../../assets/work/instagram.webp";
+import InstagramCloneMobile from "../../assets/work/instagram_mobile.webp";
 
-import CardGame from "../../assets/work/card_game.png";
-import CardGameMobile from "../../assets/work/card_game_mobile.png";
+import CardGame from "../../assets/work/card_game.webp";
+import CardGameMobile from "../../assets/work/card_game_mobile.webp";
 
-import Beatstore from "../../assets/work/beatstore.png";
-import BeatstoreMobile from "../../assets/work/beatstore_mobile.png";
+import Beatstore from "../../assets/work/beatstore.webp";
+import BeatstoreMobile from "../../assets/work/beatstore_mobile.webp";
 
-import Netflix from "../../assets/work/netflix.png";
-import NetflixMobile from "../../assets/work/netflix_mobile.png";
+import Netflix from "../../assets/work/netflix.webp";
+import NetflixMobile from "../../assets/work/netflix_mobile.webp";
 
-import Pinterest from "../../assets/work/pinterest.png";
-import PinterestMobile from "../../assets/work/pinterest_mobile.png";
+import Pinterest from "../../assets/work/pinterest.webp";
+import PinterestMobile from "../../assets/work/pinterest_mobile.webp";
 
 import Weathery from "../../assets/work/weathery.mp4";
 
-import Mockup from "../../assets/work/mockup.png";
-import Iphone from "../../assets/work/iphone.png";
+import Mockup from "../../assets/work/mockup.webp";
+import Iphone from "../../assets/work/iphone.webp";
 
 import { Parallax } from "react-scroll-parallax";
 
@@ -37,7 +37,12 @@ const Work = () => {
 
     return (
         <Parallax speed={5} translateY={-10}>
-            <div className="work-container">
+            <motion.div
+                className="work-container"
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, type: "ease" }}
+            >
                 <h3>Work</h3>
                 <p className="header">College and personal projects.</p>
 
@@ -371,7 +376,7 @@ const Work = () => {
                         </div>
                     </motion.div>
                 </motion.div>
-            </div>
+            </motion.div>
         </Parallax>
     );
 };

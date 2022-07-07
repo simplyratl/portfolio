@@ -50,6 +50,10 @@
                 color: gray;
             }
 
+            &.active {
+                cursor: grabbing;
+            }
+
             @media screen and (max-width: 1350px) {
                 font-size: 4vw;
             }

@@ -1,9 +1,10 @@
 import React from "react";
-import ContactPage from "../components/home/ContactPage";
 import Hero from "../components/home/Hero";
-import Showcase from "../components/home/Showcase";
-import Skills from "../components/home/Skills";
-import Work from "../components/home/Work";
+
+const LazyWork = React.lazy(() => import("../components/home/Work"));
+const LazySkills = React.lazy(() => import("../components/home/Skills"));
+const LazyShowcase = React.lazy(() => import("../components/home/Showcase"));
+const LazyContact = React.lazy(() => import("../components/home/ContactPage"));
 
 const Main = () => {
     return (
@@ -11,10 +12,18 @@ const Main = () => {
             <main>
                 <div className="main-wrapper">
                     <Hero />
-                    <Work />
-                    <Skills />
-                    <Showcase />
-                    <ContactPage />
+                    <React.Suspense fallback="Loading...">
+                        <LazyWork />
+                    </React.Suspense>
+                    <React.Suspense fallback="Loading...">
+                        <LazySkills />
+                    </React.Suspense>
+                    <React.Suspense fallback="Loading...">
+                        <LazyShowcase />
+                    </React.Suspense>
+                    <React.Suspense fallback="Loading...">
+                        <LazyContact />
+                    </React.Suspense>
                 </div>
             </main>
         </>
