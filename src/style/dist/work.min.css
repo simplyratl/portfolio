@@ -74,6 +74,27 @@
 .work-container .work-wrapper .work-box .mockup-container.reverse {
   flex-direction: row-reverse;
 }
+.work-container .work-wrapper .work-box .mockup-container .verified {
+  position: relative;
+  top: 8px;
+  font-size: 3rem;
+  fill: #1c99e7 !important;
+}
+.work-container .work-wrapper .work-box .mockup-container .added {
+  color: gray;
+  margin: 4px 0;
+  font-size: 1.2vw;
+}
+@media screen and (max-width: 1100px) {
+  .work-container .work-wrapper .work-box .mockup-container .added {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  .work-container .work-wrapper .work-box .mockup-container .added {
+    font-size: 1.2rem;
+  }
+}
 .work-container .work-wrapper .work-box .mockup-container .click-container {
   position: absolute;
   width: 30%;

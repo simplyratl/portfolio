@@ -28,6 +28,8 @@ import { Parallax } from "react-scroll-parallax";
 
 import Click from "../../assets/animations/click.gif";
 
+import { MdVerified } from "react-icons/md";
+
 import "../../style/dist/work.min.css";
 
 const Work = () => {
@@ -51,6 +53,64 @@ const Work = () => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
+                    <motion.div
+                        className="work-box"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6 }}
+                    >
+                        <div className="mockup-container reverse exclusive">
+                            <div className="work-box-wrapper">
+                                <a
+                                    href="https://ratlbeatz.netlify.app/"
+                                    className="image-container"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <img src={Mockup} className="mockup" alt="mockup" />
+
+                                    <img src={BeatstoreMobile} className="mobile" alt="mobile" />
+
+                                    <div className="site-container">
+                                        <img src={Beatstore} className="site" alt="site" />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <motion.div
+                                className="info-container"
+                                initial={{ opacity: 0, x: "10%" }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.6, delay: 0.8 }}
+                            >
+                                <a
+                                    href="https://ratlbeatz.netlify.app/"
+                                    className="title-link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    onMouseEnter={() => mouseEnter(dispatch)}
+                                    onMouseLeave={() => mouseLeave(dispatch)}
+                                >
+                                    <h3 className="title">
+                                        Beatstore <MdVerified className="verified" />
+                                    </h3>
+                                </a>
+
+                                <p className="added">My biggest project that can be found on web.</p>
+
+                                <p className="info">
+                                    A sophisticated project built with React js on the frontend and Node js on
+                                    the backend. Firebase is used to store audio and photos, and MongoDB is
+                                    utilized to store JSON information files about users and beats. Adding
+                                    beats is done through the admin panel, which is separate from the main
+                                    site. Basically, the admin panel is used to maintain the site. The main
+                                    functionality of the site are transactions, which is why someone would
+                                    want to visit it. To purchase high-quality beats on a modern design!
+                                </p>
+                            </motion.div>
+                        </div>
+                    </motion.div>
+
                     <motion.div
                         className="work-box"
                         initial={{ opacity: 0 }}
@@ -224,54 +284,6 @@ const Work = () => {
                     >
                         <div className="mockup-container reverse">
                             <div className="work-box-wrapper">
-                                <a href="https://github.com/simplyratl/beatstore" className="image-container">
-                                    <img src={Mockup} className="mockup" alt="mockup" />
-
-                                    <img src={BeatstoreMobile} className="mobile" alt="mobile" />
-
-                                    <div className="site-container">
-                                        <img src={Beatstore} className="site" alt="site" />
-                                    </div>
-                                </a>
-                            </div>
-
-                            <motion.div
-                                className="info-container"
-                                initial={{ opacity: 0, x: "10%" }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.6, delay: 0.8 }}
-                            >
-                                <a
-                                    href="https://github.com/simplyratl/beatstore"
-                                    className="title-link"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    onMouseEnter={() => mouseEnter(dispatch)}
-                                    onMouseLeave={() => mouseLeave(dispatch)}
-                                >
-                                    <h3 className="title">Beatstore</h3>
-                                </a>
-                                <p className="info">
-                                    A sophisticated project built with React js on the frontend and Node js on
-                                    the backend. Firebase is used to store audio and photos, and MongoDB is
-                                    utilized to store JSON information files about users and beats. Adding
-                                    beats is done through the admin panel, which is separate from the main
-                                    site. Basically, the admin panel is used to maintain the site. The main
-                                    functionality of the site are transactions, which is why someone would
-                                    want to visit it. To purchase high-quality beats on a modern design!
-                                </p>
-                            </motion.div>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        className="work-box"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <div className="mockup-container">
-                            <div className="work-box-wrapper">
                                 <a
                                     href="https://github.com/simplyratl/netflix-clone"
                                     className="image-container"
@@ -322,7 +334,7 @@ const Work = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <div className="mockup-container reverse">
+                        <div className="mockup-container">
                             <div className="work-box-wrapper">
                                 <div
                                     className="image-container iphone-container"

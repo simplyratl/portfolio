@@ -53,6 +53,10 @@
 .skills .skills-wrapper .skill:hover {
   color: gray;
 }
+.skills .skills-wrapper .skill.active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
 @media screen and (max-width: 1350px) {
   .skills .skills-wrapper .skill {
     font-size: 4vw;
