@@ -1,0 +1,101 @@
+.skills-cards-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 28px;
+
+  @media screen and (max-width: 1070px) {
+    max-width: 620px;
+    padding-inline: 20px;
+  }
+
+  .skills-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+
+    @media screen and (max-width: 640px) {
+      grid-template-columns: 1fr;
+      row-gap: 1em;
+      column-gap: 0;
+    }
+
+    .card {
+      --background: #000;
+
+      position: relative;
+      background: #000;
+      border-radius: 40px;
+      height: 300px;
+      cursor: pointer;
+      overflow: hidden;
+
+      @media screen and (max-width: 1070px) {
+        height: 200px;
+      }
+
+      &:hover {
+        .card-wrapper {
+          scale: 100%;
+          transform: scale(1);
+        }
+      }
+
+      .card-wrapper {
+        position: relative;
+        scale: 0;
+        transition: 0.3s scale;
+        translate: -50%, -50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        background: var(--background);
+      }
+
+      span {
+        position: absolute;
+        display: inline-block;
+        top: 200px;
+        left: 4vmin;
+        color: #fff;
+        font-weight: 600;
+        font-size: 40px;
+        z-index: 2;
+
+        @media screen and (max-width: 1070px) {
+          top: 114px;
+        }
+      }
+
+      .animation {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+.grid-2-span {
+  grid-column: 2 span;
+}
+
+.grid-3 {
+  grid-column: span 3;
+
+  @media screen and (max-width: 640px) {
+    grid-column: span 1;
+  }
+}

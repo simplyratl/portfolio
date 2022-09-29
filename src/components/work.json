@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Beatstore",
+    "description": "A sophisticated project built with React js on the frontend and Node js on backend. Firebase is used to store audio and photos, and MongoDB is utilized to store JSON  about beats. Adding beats is done through the admin which is separate from the main site. Basically, the admin panel is used to maintain the site. The main functionality of site are transactions, which is why someone would want to visit it. To purchase high-quality beats on a modern design!",
+    "link": "https://ratlbeatz.netlify.app/",
+    "imageDesktop": "/images/work/beatstore.webp",
+    "imageMobile": "/images/work/beatstore_mobile.webp",
+    "additional_title": "My biggest project that can be found on web.",
+    "verified": true
+  },
+  {
+    "title": "Netflix Clone",
+    "description": "What more to say? Netflix clone made using React js. The main goal wasn't a functionality but a basic idea of learning to create a Netflix style interface. Watching videos isn't available because... 🏴‍☠️. But looking through what is new and popular definetely is. Using Movie Database for fetching information makes the site all the time relevant considering the API is updating a lot.",
+    "link": "https://github.com/simplyratl/netflix-clone",
+    "imageDesktop": "/images/work/netflix.webp",
+    "imageMobile": "/images/work/netflix_mobile.webp"
+  },
+  {
+    "title": "Card Game",
+    "description": "Another student project, this time created with HTML, CSS, and Vanilla Javascript. A simple memory card game that everyone is familiar with, but with three unique variations. There are three levels of difficulty: easy, medium, and hard. The size of the table and the tiles within them are the key differences between them. Easy is 4x4, medium is 6x6, and hard is 8x8. You can aim for a high score while running away from the timer using a scoreboard that resets after the session (limitations of the student project).",
+    "link": "https://github.com/simplyratl/netflix-clone",
+    "imageDesktop": "/images/work/card_game.webp",
+    "imageMobile": "/images/work/card_game_mobile.webp"
+  },
+  {
+    "title": "2048",
+    "description": "Popular classic game 2048, coded entirely in vanilla Javascript. But not in colors you are used to, but in a new more modern design and scheme. The goal of the game is to reach 2048 block, but it doesn't end there. You can continue playing and try to reach your newest high score!",
+    "link": "https://github.com/simplyratl/2048",
+    "imageDesktop": "/images/work/2048.jpg",
+    "imageMobile": "/images/work/2048_mobile.jpg"
+  },
+  {
+    "title": "Instagram Clone",
+    "description": "Instagram Clone built with HTML, CSS, Javascript (JQuery), PHP and MYSQL for a student project. Because there is no follow functionality every post is global. Which means that every user can see each others posts and comments. (maybe a new social media? :) ) Basicaly every CRUD operation is used in some way throughout the site.",
+    "link": "https://github.com/simplyratl/instagram-clone",
+    "imageDesktop": "/images/work/instagram.webp",
+    "imageMobile": "/images/work/instagram_mobile.webp"
+  }
+]

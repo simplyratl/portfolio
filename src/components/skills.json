@@ -1,0 +1,26 @@
+[
+  {
+    "title": "HTML",
+    "animation": "/images/skills-gifs/html.gif",
+    "background": "#262626",
+    "block_size": 1
+  },
+  {
+    "title": "CSS",
+    "animation": "/images/skills-gifs/css.gif",
+    "background": "#000e07",
+    "block_size": 2
+  },
+  {
+    "title": "Javascript",
+    "animation": "/images/skills-gifs/javascript.gif",
+    "background": "#6dbac6",
+    "block_size": 2
+  },
+  {
+    "title": "React",
+    "animation": "/images/skills-gifs/react.gif",
+    "background": "#272622",
+    "block_size": 3
+  }
+]
